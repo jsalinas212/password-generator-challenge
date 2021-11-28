@@ -15,4 +15,4 @@ This password generator app was built to generate secure passwords based on user
 
 ## Contributions
 
-Password Generator code by Jorge A Salinas Jr
+Jorge A Salinas Jr (Password Generator JavaScript)
