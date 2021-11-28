@@ -1,4 +1,14 @@
 // Assignment code here
+var generatePassword = function() {
+  var specialChars = " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
+  var passCriteria = {
+    passLength: null, 
+    lowercase: null, 
+    uppercase: null, 
+    numeric: null, 
+    special: null
+  }
+};
 
 
 // Get references to the #generate element
