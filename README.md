@@ -1,4 +1,4 @@
-# password-generator-challenge
+# Password Generator App Challenge
 
 ## Purpose
 This password generator app was built to generate secure passwords based on user manually selected criteria or entirely random.
