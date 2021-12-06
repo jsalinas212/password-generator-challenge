@@ -4,7 +4,7 @@
 // Get password length
 var passwordLength = 24;
 // Character types
-var specialChars = [" ","!","#","$","%","&","(",")","*","+",",","-",".","/",":",";","<","=",">","?","@","[","]","^","_","{","|","}","~",";"];
+var specialChars = ["!","#","$","%","&","(",")","*","+","-",".","/",":",";","<","=",">","?","@","[","]","^","_","{","|","}","~",";"];
 var lowerAlpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 var upperAlpha = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 var numeric = [1,2,3,4,5,6,7,8,9,0];
@@ -22,18 +22,25 @@ var generatePassword = function() {
     // Variables
     var passBuild = [];
     var password;
+
     // Take types and build password by length
     for (var i = 0; i < passwordLength; i++) {
       var typeSelector = charTypes[getRandom(4)];
       var typeArrSize = typeSelector.length;
       var charSelector = typeSelector[getRandom(typeArrSize)];
-
-      
+      passBuild.push(charSelector);
     }
-    console.log(charSelector);
+
+    // Convert array to string and remove commas
+    password = passBuild.toString();
+    password = password.replace(/,/g, '');
+
+    // Return password
+    return password;
   };
 
-  passGen();
+  // Return function result
+  return passGen();
 }
 
 
