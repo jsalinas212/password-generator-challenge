@@ -66,6 +66,18 @@ header {
   height: 2px;
 }
 
+.selectForm {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px;
+}
+
+.selectForm input {
+  margin: 20px;
+}
+
 .card-footer::after {
   content: " ";
   display: block;
