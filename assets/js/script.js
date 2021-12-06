@@ -16,6 +16,7 @@ var generatePassword = function(passObj) {
   var passwordLength = passObj.passLen;
   var charTypes = [];
 
+  // Check if null
   if (passObj.charNum != null) {
     charTypes.push(numeric);
   }
@@ -32,6 +33,7 @@ var generatePassword = function(passObj) {
     charTypes.push(specialChars);
   }
 
+  // If all are null, alert to make at least one selection and return nothing
   if (passObj.charNum === null && passObj.charUC === null && passObj.charLC === null && passObj.charSpec === null) {
     alert("You need to make at least one character type selection.");
     return "";
