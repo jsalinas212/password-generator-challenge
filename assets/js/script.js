@@ -1,6 +1,21 @@
 // Assignment code here
 var generatePassword = function() {
-  var specialChars = " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
+
+  // Character types
+  var specialChars = [" ","!","#","$","%","&","(",")","*","+",",","-",".","/",":",";","<","=",">","?","@","[","]","^","_","{","|","}","~",";"];
+  var alphaChars = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+  var numericChars = [1,2,3,4,5,6,7,8,9,0];
+
+  // package up data as an object
+  var passwordDataObj = {
+      name: taskNameInput,
+      type: taskTypeInput
+  };
+
+  var value = Math.floor(Math.random());
+
+  // send as an arg to createTaskEl
+  createTaskEl(passwordDataObj);
 };
 
 
